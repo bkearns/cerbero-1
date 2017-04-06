@@ -1,0 +1,11 @@
+sudo: required
+before_install: ./provision.sh
+script: 
+  - mkdir build
+  - cd build
+  - git clone https://github.com/cybercypher/cerbero.git
+  - cd cerbero
+  - ./cerbero-uninstalled -c config/linux.cbc fetch-package --full-reset --reset-rdeps openwebrtc 
+  - ./cerbero-uninstalled -c config/linux.cbc bootstrap
+  - ./cerbero-uninstalled -c config/linux.cbc package -f openwebrtc
+
