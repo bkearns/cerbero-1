@@ -43,6 +43,8 @@ class SDKPackage(package.SDKPackage):
                # (name, required, selected)
                ('base-system-1.0', True, True),
                ('gstreamer-1.0-core', True, True),
+               ('gstreamer-1.0-codecs', True, True),
+               ('gstreamer-1.0-system', True, True),
                ('openwebrtc-base', True, True),
               ]
 
