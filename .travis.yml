@@ -3,6 +3,8 @@ before_install:
   - sudo apt-get install libva-dev git curl 
   - sudo mkdir -p /opt/openwebrtc-0.3
   - sudo chown -R $UID /opt/openwebrtc-0.3
+  - git config --global user.email "@cybercypher"
+  - git config --global user.name "@cybercypher"
 script: 
   - mkdir build
   - cd build
